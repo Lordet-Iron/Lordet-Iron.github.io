@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Zone</title>
+    <style>
+        body {
+            background-color: black;
+            color: orange;
+            font-family: Verdana, sans-serif;
+        }
+
+        h1, p {
+            color: orange;
+            font-family: Verdana, sans-serif;
+        }
+
+        .content {
+			width: 70%;  /* Define your preferred width */
+			margin: 20px auto;  /* Auto margins on the left and right will center the element */
+		}
+
+        .flex-container {
+			display: flex;
+			align-items: flex-start;
+			gap: 20px;  /* space between the video and info-section */
+		}
+
+		.youtube-video {
+			flex: 1;  /* it takes the remaining space of the flex container */
+			max-width: 560px;  /* the width of your YouTube video */
+		}
+
+		.info-section {
+			flex: 1;  /* it takes the remaining space of the flex container */
+			max-width: calc(100% - 560px - 20px);  /* the remaining space subtracting the YouTube video width and the gap */
+		}
+
+		.info-section div {
+			margin-bottom: 20px;
+		}
+
+        .overview {
+            width: 50%;
+            text-align: center;
+        }
+
+        .details {
+            width: 5%;
+        }
+
+        .details p {
+            margin-bottom: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center;">Nova Zone</h1>
+    </header>
+    
+    <div class="content">
+        <!-- Add your Youtube video here -->
+		<div class="flex-container">
+			<div class="youtube-video">
+				<iframe width="1280" height="720" src="https://www.youtube.com/embed/zh4gzV_x3UM?list=RDZe2pqYDbg2s" title="Rick and Morty: Evil Morty Theme (For The Damaged Coda) | EPIC VERSION [Attack on Titan Style]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</div>
+			
+			<div class="info-section">
+				<!-- Add your text outlining the project details here -->
+				<div class="details">
+					<p><strong>Platform:</strong> Windows Desktop</p>
+					<p><strong>Tools Used:</strong> Unity Game Engine</p>
+					<p><strong>Duration:</strong> 3 Months</p>
+					<p><strong>Date:</strong> 07/2023</p>
+				</div>
+
+				<!-- Add your overview here -->
+				<div class="overview">
+					<p>Nova Zone is a take on the arcade style shmup game genre where the player progresses through an environment full of progressively more difficult enemies that they need to destroy. The twist being that they can sacrifice their score to acquire upgrades to make themselves more powerful. Consequently, this gives the player ownership of the difficulty of the game in a way they can immediately see its impact, allowing them to play it their way.</p>
+					<p></p>
+				</div>
+			</div>
+		</div>
+    </div>
+</body>
+</html>
