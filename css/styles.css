@@ -1,0 +1,258 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #ffffff; /* Changed text colour to white */
+    background-color: #121212; /* Set a dark background colour */
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Changed to dark transparent background */
+    backdrop-filter: blur(10px);
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+    .navbar .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; /* Correct CSS property, cannot be 'centre' */
+    }
+
+    .navbar .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #ffffff; /* Changed logo colour to white */
+        text-decoration: none;
+    }
+
+    .navbar .nav-links {
+        list-style: none;
+        display: flex;
+    }
+
+        .navbar .nav-links li {
+            margin-left: 20px;
+        }
+
+        .navbar .nav-links a {
+            text-decoration: none;
+            color: #ffffff; /* Changed link colour to white */
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+            .navbar .nav-links a:hover {
+                color: #1E90FF; /* Changed hover colour to a bright blue for contrast */
+            }
+
+/* Video Section */
+.video-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff; /* Ensures text is white */
+    text-align: center; /* British spelling for 'center' */
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+    .video-overlay h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+
+    .video-overlay p {
+        font-size: 1.2rem;
+    }
+
+/* Sections Styling */
+section {
+    padding: 60px 0;
+}
+
+.about-section, .favourite-project-section, .projects-section, .contact-footer {
+    background: #1e1e1e; /* Changed background to dark grey */
+}
+
+    .about-section h2, .favourite-project-section h2, .projects-section h2, .contact-footer h2 {
+        text-align: center; /* British spelling for 'center' */
+        margin-bottom: 20px;
+        font-size: 2rem;
+        position: relative;
+        color: #ffffff; /* Ensure headings are white */
+    }
+
+        .about-section h2::after, .favourite-project-section h2::after, .projects-section h2::after, .contact-footer h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: #1E90FF; /* Changed to bright blue for accent */
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+    /* Favourite Project Styling */
+    .favourite-project-section .project {
+        text-align: center; /* British spelling for 'center' */
+    }
+
+        .favourite-project-section .project a {
+            display: inline-block;
+            overflow: hidden;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+            .favourite-project-section .project a img {
+                width: 100%;
+                max-width: 400px;
+                height: auto;
+                display: block;
+            }
+
+            .favourite-project-section .project a:hover {
+                transform: scale(1.05);
+            }
+
+        .favourite-project-section .project p {
+            margin-top: 15px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 1rem;
+            color: #cccccc; /* Light grey text for descriptions */
+        }
+
+/* Projects Grid Styling */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-item {
+    background: #2c2c2c; /* Darker grey for project items */
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center; /* British spelling for 'center' */
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1); /* Subtle light shadow */
+    transition: transform 0.3s ease;
+}
+
+    .project-item img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    .project-item:hover img {
+        transform: scale(1.1);
+    }
+
+    .project-item p {
+        margin-top: 10px;
+        font-size: 0.95rem;
+        color: #cccccc; /* Light grey text for descriptions */
+    }
+
+/* Contact Footer Styling */
+.contact-footer {
+    background: #000000; /* Pure black for footer */
+    color: #ffffff;
+    text-align: center; /* British spelling for 'center' */
+}
+
+    .contact-footer a {
+        color: #1E90FF; /* Bright blue links for contrast */
+        text-decoration: none;
+        margin: 0 10px;
+        transition: color 0.3s ease;
+    }
+
+        .contact-footer a:hover {
+            color: #ffffff; /* Links turn white on hover */
+        }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        display: none; /* For simplicity; consider adding a hamburger menu */
+    }
+
+    .video-overlay h1 {
+        font-size: 2rem;
+    }
+
+    .video-overlay p {
+        font-size: 1rem;
+    }
+}
+
+/* Navbar Toggle Button */
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 60px; /* Adjust based on navbar height */
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.95); /* Dark background for mobile menu */
+        flex-direction: column;
+        align-items: center; /* British spelling for 'center' */
+        display: none;
+    }
+
+        .nav-links.active {
+            display: flex;
+        }
+
+        .nav-links li {
+            margin: 15px 0;
+        }
+}
