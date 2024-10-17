@@ -10,16 +10,18 @@ html, body {
     padding: 0;
     height: 100%;
     color: white;
+    flex-direction: column;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
+body { /*HANDLED PER PAGE*/
+
+    /*font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    color: #ffffff; /* Changed text colour to white */
-    background: url('../images/scrapforge (1).png') no-repeat center center fixed;
+    color: #ffffff;*/ /* Changed text colour to white */
+    /*background: url('../images/scrapforge (1).png') no-repeat center center fixed;
     background-size: cover;
     position: relative;
-    transition: background-image 1s ease-in-out; /* This line adds a smooth transition */
+    transition: background-image 1s ease-in-out;*/ /* This line adds a smooth transition */
 }
 
 /* Container */
@@ -90,6 +92,7 @@ body {
     padding: 2rem;
     background-color: rgba(255, 255, 255, 0.2); /* White transparent background */
     border-radius: 10px;
+    flex: 1;
 }
 
 h1 {
@@ -173,6 +176,7 @@ h1 {
     background: #000000; /* Pure black for footer */
     color: #ffffff;
     text-align: center; /* British spelling for 'center' */
+    margin-top: auto; /* Ensures footer is pushed to the bottom */
 }
 
     .contact-footer a {
