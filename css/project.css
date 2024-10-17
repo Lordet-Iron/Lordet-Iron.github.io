@@ -168,5 +168,20 @@ h1 {
         transform: translateY(0);
     }
 
+/* Contact Footer Styling */
+.contact-footer {
+    background: #000000; /* Pure black for footer */
+    color: #ffffff;
+    text-align: center; /* British spelling for 'center' */
+}
 
+    .contact-footer a {
+        color: #1E90FF; /* Bright blue links for contrast */
+        text-decoration: none;
+        margin: 0 10px;
+        transition: color 0.3s ease;
+    }
 
+        .contact-footer a:hover {
+            color: #ffffff; /* Links turn white on hover */
+        }
