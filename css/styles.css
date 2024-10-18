@@ -237,6 +237,16 @@ section {
     }
 }
 
+.project-tag {
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.project-tag-container {
+    display: flex;
+    justify-content: center;
+}
+
 /* Navbar Toggle Button */
 .nav-toggle {
     display: none;
