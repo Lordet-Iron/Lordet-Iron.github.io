@@ -208,7 +208,7 @@ section {
 .contact-footer {
     background: #000000; /* Pure black for footer */
     color: #ffffff;
-    text-align: center; /* British spelling for 'center' */
+    text-align: center;
 }
 
     .contact-footer a {

@@ -13,15 +13,23 @@ html, body {
     flex-direction: column;
 }
 
-body { /*HANDLED PER PAGE*/
-
-    /*font-family: 'Roboto', sans-serif;
+body {
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    color: #ffffff;*/ /* Changed text colour to white */
-    /*background: url('../images/scrapforge (1).png') no-repeat center center fixed;
-    background-size: cover;
+    color: #ffffff; 
     position: relative;
-    transition: background-image 1s ease-in-out;*/ /* This line adds a smooth transition */
+    transition: background-image 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+/*Sets the background for each project page, make new page class for each project*/
+.scrapforge-page {
+    background: url('../images/scrapforge (1).png') no-repeat center center fixed;
+    background-size: cover;
+}
+.novazone1-page {
+    background: url('../images/novazone1 (1).png') no-repeat center center fixed;
+    background-size: cover;
 }
 
 /* Container */
@@ -81,6 +89,7 @@ body { /*HANDLED PER PAGE*/
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* Black transparent overlay */
+    z-index: 1; /* Ensure the overlay stays beneath the content */
 }
 
 .content {
@@ -175,8 +184,11 @@ h1 {
 .contact-footer {
     background: #000000; /* Pure black for footer */
     color: #ffffff;
-    text-align: center; /* British spelling for 'center' */
-    margin-top: auto; /* Ensures footer is pushed to the bottom */
+    text-align: center;
+    padding: 1rem; /* Add some padding for a better look */
+    z-index: 2; /* Ensure the footer stays on top of the overlay */
+    position: relative;
+    width: 100%;
 }
 
     .contact-footer a {
@@ -189,3 +201,33 @@ h1 {
         .contact-footer a:hover {
             color: #ffffff; /* Links turn white on hover */
         }
+
+.title-section {
+    background: #121212;
+    padding: 0px 0;
+}
+
+    .title-section h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        position: relative;
+        color: #ffffff; /* Ensure headings are white */
+    }
+
+.about-section h2, .favourite-project-section h2, .projects-section h2, .contact-footer h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    position: relative;
+    color: #ffffff; /* Ensure headings are white */
+}
+
+    .about-section h2::after, .favourite-project-section h2::after, .projects-section h2::after, .contact-footer h2::after {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 3px;
+        background: #1E90FF; /* Changed to bright blue for accent */
+        margin: 10px auto 0;
+        border-radius: 2px;
+    }
