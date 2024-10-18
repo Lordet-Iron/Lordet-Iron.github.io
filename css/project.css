@@ -35,6 +35,10 @@ body {
     background: url('../images/novazone2 (1).png') no-repeat center center fixed;
     background-size: cover;
 }
+.wormhole-page {
+    background: url('../images/wormhole (1).png') no-repeat center center fixed;
+    background-size: cover;
+}
 
 /* Container */
 .container {
