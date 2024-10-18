@@ -31,6 +31,10 @@ body {
     background: url('../images/novazone1 (1).png') no-repeat center center fixed;
     background-size: cover;
 }
+.novazone2-page {
+    background: url('../images/novazone2 (1).png') no-repeat center center fixed;
+    background-size: cover;
+}
 
 /* Container */
 .container {

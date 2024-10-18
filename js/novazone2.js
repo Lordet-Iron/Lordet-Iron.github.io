@@ -1,9 +1,12 @@
 let images = [
-    'images/scrapforge (1).png',
-    'images/scrapforge (2).png',
-    'images/scrapforge (3).png',
-    'images/scrapforge (4).png',
-    'images/scrapforge (5).png'];
+    'images/novazone2 (1).png',
+    'images/novazone2 (2).png',
+    'images/novazone2 (3).png',
+    'images/novazone2 (4).png',
+    'images/novazone2 (5).png',
+    'images/novazone2 (6).png',
+    'images/novazone2 (7).png',
+    'images/novazone2 (8).png'];
 let currentImageIndex = 0;
 
 // Preload images and ensure they are fully loaded
@@ -26,6 +29,5 @@ function changeBackground() {
         currentImageIndex = (currentImageIndex + 1) % images.length;
     }
 }
-//document.body.style.backgroundImage = "url('images/scrapforge (2).png')";
 
 setInterval(changeBackground, 6000); // Change image every 5 seconds
