@@ -83,7 +83,7 @@ body {
             }
 
 .overlay {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -96,7 +96,8 @@ body {
     position: relative;
     z-index: 2;
     max-width: 900px;
-    margin: auto;
+    margin: 70px auto 0 auto;
+    margin-bottom: 60px;
     text-align: center;
     padding: 2rem;
     background-color: rgba(255, 255, 255, 0.2); /* White transparent background */
@@ -126,6 +127,7 @@ h1 {
     overflow: hidden;
     max-width: 100%; /* Ensures it doesn't overflow the container */
     background: #000; /* Optional: Gives a black background in case video doesn't load immediately */
+    z-index: 2;
 }
 
 /* CSS for the iframe */
