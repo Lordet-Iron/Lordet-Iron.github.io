@@ -119,6 +119,12 @@ section {
         position: relative;
         color: #ffffff; /* Ensure headings are white */
     }
+    .title-section p {
+        text-align: center;
+        font-size: 0.9rem;
+        position: relative;
+        color: #ffffff; /* Ensure headings are white */
+    }
 
     .about-section h2, .favourite-project-section h2, .projects-section h2, .contact-footer h2 {
         text-align: center;
