@@ -102,7 +102,8 @@ body {
     padding: 2rem;
     background-color: rgba(255, 255, 255, 0.2); /* White transparent background */
     border-radius: 10px;
-    flex: 1;
+    flex-grow: 0; /* Stop flexbox from making it too tall */
+    min-height: auto; /* Remove any unnecessary stretching */
 }
 
 h1 {
@@ -191,6 +192,7 @@ h1 {
     z-index: 2; /* Ensure the footer stays on top of the overlay */
     position: relative;
     width: 100%;
+    margin-top: auto;
 }
 
     .contact-footer a {
