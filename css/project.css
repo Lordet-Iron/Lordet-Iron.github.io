@@ -39,6 +39,10 @@ body {
     background: url('../images/wormhole (1).png') no-repeat center center fixed;
     background-size: cover;
 }
+.projectsnake-page {
+    background: url('../images/projectsnake (1).png') no-repeat center center fixed;
+    background-size: cover;
+}
 
 /* Container */
 .container {
