@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/project.css">
 </head>
 
-<body class="wormhole-page">
+<body class="projectdragon-page">
     <!-- Navigation Menu -->
     <nav class="navbar">
         <div class="container">
@@ -24,39 +24,43 @@
     <div class="overlay"></div>
 
     <div class="content">
-        <h1>Wormhole</h1>
+        <h1>Project Dragon</h1>
         <div class="project-info">
-            <p><strong>Project Type:</strong> Software Development</p>
+            <p><strong>Project Type:</strong> Game Development</p>
             <p><strong>Software Used:</strong> Visual Studio, Github Desktop</p>
-            <p><strong>Language(s) Used:</strong> C#</p>
+            <p><strong>Language(s) Used:</strong> C++</p>
             <p><strong>Primary Role(s):</strong> Solo Project</p>
         </div>
 
         <p class="project-description">
-            A complex solution to a simple problem. Friends and I wanted to play ARMA 3 together but the setup for that took time and technical proficiency which not everyone in the group had. Leading us to one-by-one walk people through installing and setting up all the things to play together like TeamSpeak, task force radio and ZeroTier.
-            <br />
-            <br />
-            Since there’s almost 20 of us wanting to play I devised a complex solution to the simple problem. Wormhole! An application that installs and configures software for the user so they can quickly and easily get themselves ready to play with us!
-
+            Using SDL2 and C++, I set out to create what I thought would be 
+            a simple game where you play as a dragon and shoot enemies. 
+            However, I ended up leveraging a significant amount of C++ 
+            to implement various game engine-like features, replicating 
+            functionalities I missed from Unity. The process was exhausting 
+            at times, but seeing everything come together into a polished 
+            system was incredibly rewarding. Despite this, the core gameplay 
+            remains simple—battling a dragon in a basic environment.
         </p>
 
         <div class="buttons-container"> <!--INSERT LINKS-->
-            <a href="https://github.com/Lordet-Iron/Wormhole-2" class="fancy-button" target="_blank">View Source Code</a>
+            <a href="https://github.com/Lordet-Iron/Project-Dragon" class="fancy-button" target="_blank">View Source Code</a>
         </div>
 
 
-        <!--<div class="video-embed">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/INSERT ID" 
+        <div class="video-embed">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qHsZwa82C9M" 
             title="YouTube video player" frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>-->
+        </div>
         <div class="contributions">
             <h2>Highlights</h2>
             <p>
-                - Installs TeamSpeak and Taskforce radio addon.<br>
-                - Installs ZeroTier and joins the ZeroTier network.<br />
-                - Utilises WPF technologies for a modern look.<br />
-                - Utilises ClickOnce rigged to a GitHub repository for automatic updates.
+                - Created JSON driven map creation which supports different textures, sizes, and positions. With full collision functionality. <br>
+                - Physics based movement for all objects. <br>
+                - Physics projectile system. <br>
+                - Animatable sprites with multiple images. <br>
+                - Accessable sound effect system which easily adapts to sounds added into the JSON. <br>
             </p>
         </div>
     </div>
@@ -80,6 +84,6 @@
     </footer>
 
 
-    <script src="js/wormhole.js"></script>
+    <script src="js/projectdragon.js"></script>
 </body>
 </html>
