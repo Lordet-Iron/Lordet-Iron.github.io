@@ -47,6 +47,10 @@ body {
     background: url('../images/projectdragon (4).png') no-repeat center center fixed;
     background-size: cover;
 }
+.projectfactory-page {
+    background: url('../images/projectfactory (3).png') no-repeat center center fixed;
+    background-size: cover;
+}
 
 /* Container */
 .container {
