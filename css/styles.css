@@ -190,6 +190,9 @@ section {
     text-align: center; /* British spelling for 'center' */
     box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1); /* Subtle light shadow */
     transition: transform 0.3s ease;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #ffffff;
 }
 
     .project-item img {
@@ -209,6 +212,25 @@ section {
         font-size: 0.95rem;
         color: #cccccc; /* Light grey text for descriptions */
     }
+
+    .project-item a {
+        text-decoration: none; /* Ensure no underline */
+    }
+
+.project-title-overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6); /* Dark background for readability */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #ffffff;
+    text-align: center;
+    pointer-events: none; /* So clicking still goes through */
+}
+
 
 /* Contact Footer Styling */
 .contact-footer {
