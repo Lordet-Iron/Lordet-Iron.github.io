@@ -299,15 +299,17 @@ section {
 /* Navbar Toggle Button */
 .nav-toggle {
     display: none;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
+    
 }
 
 @media (max-width: 768px) {
     .nav-toggle {
         display: block;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: #fff;
     }
 
     .nav-links {
