@@ -64,6 +64,28 @@ body {
                 color: #1E90FF;
             }
 
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        display: none; /* Hide nav links by default on mobile */
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.95);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        align-items: center;
+        z-index: 999;
+    }
+
+        .navbar .nav-links.active {
+            display: flex; /* Show nav links when toggled */
+        }
+
+        .navbar .nav-links li {
+            margin: 15px 0; /* Vertical spacing for mobile */
+        }
+}
+
 /* Video Section */
 .video-section {
     position: relative;
