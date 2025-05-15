@@ -183,6 +183,12 @@ section {
     gap: 20px;
 }
 
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 .project-item {
     background: #2c2c2c;
     padding: 15px;
