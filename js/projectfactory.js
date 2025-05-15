@@ -26,4 +26,15 @@ function changeBackground() {
 }
 //document.body.style.backgroundImage = "url('images/scrapforge (2).png')";
 
+document.addEventListener("DOMContentLoaded", () => {
+    const navToggle = document.getElementById("navToggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    navToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+    });
+});
+
 setInterval(changeBackground, 6000); // Change image every 5 seconds
+
+
