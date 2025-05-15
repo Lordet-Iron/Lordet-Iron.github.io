@@ -92,7 +92,7 @@ body {
 }
 
     .video-overlay h1 {
-        font-size: 3rem;
+        font-size: clamp(2rem, 5vw, 3rem);
         margin-bottom: 10px;
     }
 
@@ -123,7 +123,7 @@ section {
     }
     .title-section p {
         text-align: center;
-        font-size: 0.9rem;
+        font-size: clamp(0.8rem, 2vw, 1rem);
         position: relative;
         color: #ffffff;
     }
@@ -174,7 +174,7 @@ section {
             max-width: 600px;
             margin-left: auto;
             margin-right: auto;
-            font-size: 1rem;
+            font-size: clamp(0.9rem, 2vw, 1.1rem);
             color: #cccccc;
         }
 
@@ -263,21 +263,6 @@ section {
         .contact-footer a:hover {
             color: #ffffff;
         }
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .navbar .nav-links {
-        display: none; /* TODO: hamburger menu? */
-    }
-
-    .video-overlay h1 {
-        font-size: 2rem;
-    }
-
-    .video-overlay p {
-        font-size: 1rem;
-    }
-}
 
 .project-tag {
     padding: 0.5rem;
