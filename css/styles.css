@@ -45,7 +45,13 @@ body {
 
     .navbar .nav-links {
         list-style: none;
-        display: flex;
+        display: none;
+    }
+
+    @media (min-width: 769px) {
+        .navbar .nav-links {
+            display: flex; /* Show on desktop */
+        }
     }
 
         .navbar .nav-links li {
