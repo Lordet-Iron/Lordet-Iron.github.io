@@ -1,4 +1,4 @@
-/* Reset some default styles */
+/* Reset default styles */
 * {
     margin: 0;
     padding: 0;
@@ -9,8 +9,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    color: #ffffff; /* Changed text colour to white */
-    background-color: #121212; /* Set a dark background colour */
+    color: #ffffff;
+    background-color: #121212;
 }
 
 /* Container */
@@ -24,7 +24,7 @@ body {
 .navbar {
     position: fixed;
     width: 100%;
-    background: rgba(0, 0, 0, 0.8); /* Changed to dark transparent background */
+    background: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(10px);
     padding: 10px 0;
     z-index: 1000;
@@ -33,13 +33,13 @@ body {
     .navbar .container {
         display: flex;
         justify-content: space-between;
-        align-items: center; /* Correct CSS property, cannot be 'centre' */
+        align-items: center;
     }
 
     .navbar .logo {
         font-size: 1.5rem;
         font-weight: bold;
-        color: #ffffff; /* Changed logo colour to white */
+        color: #ffffff;
         text-decoration: none;
     }
 
@@ -54,13 +54,13 @@ body {
 
         .navbar .nav-links a {
             text-decoration: none;
-            color: #ffffff; /* Changed link colour to white */
+            color: #ffffff;
             font-weight: 500;
             transition: color 0.3s ease;
         }
 
             .navbar .nav-links a:hover {
-                color: #1E90FF; /* Changed hover colour to a bright blue for contrast */
+                color: #1E90FF;
             }
 
 /* Video Section */
@@ -82,8 +82,8 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #ffffff; /* Ensures text is white */
-    text-align: center; /* British spelling for 'center' */
+    color: #ffffff;
+    text-align: center;
     background: rgba(0, 0, 0, 0.4);
     padding: 20px;
     border-radius: 10px;
@@ -104,10 +104,10 @@ section {
 }
 
 .about-section {
-    background: #240c39; /* Changed background to dark grey #121212 */
+    background: #240c39;
 }
 .favourite-project-section, .projects-section, .contact-footer {
-    background: #1e1e1e; /* Changed background to dark grey */
+    background: #1e1e1e;
 }
 .title-section {
     background: #121212;
@@ -117,13 +117,13 @@ section {
         text-align: center;
         font-size: 2.5rem;
         position: relative;
-        color: #ffffff; /* Ensure headings are white */
+        color: #ffffff;
     }
     .title-section p {
         text-align: center;
         font-size: 0.9rem;
         position: relative;
-        color: #ffffff; /* Ensure headings are white */
+        color: #ffffff;
     }
 
     .about-section h2, .favourite-project-section h2, .projects-section h2, .contact-footer h2 {
@@ -131,7 +131,7 @@ section {
         margin-bottom: 20px;
         font-size: 2.5rem;
         position: relative;
-        color: #ffffff; /* Ensure headings are white */
+        color: #ffffff;
     }
 
         .about-section h2::after, .favourite-project-section h2::after, .projects-section h2::after, .contact-footer h2::after {
@@ -139,14 +139,14 @@ section {
             display: block;
             width: 60px;
             height: 3px;
-            background: #1E90FF; /* Changed to bright blue for accent */
+            background: #1E90FF;
             margin: 10px auto 0;
             border-radius: 2px;
         }
 
     /* Favourite Project Styling */
     .favourite-project-section .project {
-        text-align: center; /* British spelling for 'center' */
+        text-align: center;
     }
 
         .favourite-project-section .project a {
@@ -173,7 +173,7 @@ section {
             margin-left: auto;
             margin-right: auto;
             font-size: 1rem;
-            color: #cccccc; /* Light grey text for descriptions */
+            color: #cccccc;
         }
 
 /* Projects Grid Styling */
@@ -184,11 +184,11 @@ section {
 }
 
 .project-item {
-    background: #2c2c2c; /* Darker grey for project items */
+    background: #2c2c2c;
     padding: 15px;
     border-radius: 10px;
-    text-align: center; /* British spelling for 'center' */
-    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1); /* Subtle light shadow */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
     transition: transform 0.3s ease;
     margin-top: 10px;
     font-size: 1.2rem;
@@ -210,11 +210,11 @@ section {
     .project-item p {
         margin-top: 10px;
         font-size: 0.95rem;
-        color: #cccccc; /* Light grey text for descriptions */
+        color: #cccccc;
     }
 
     .project-item a {
-        text-decoration: none; /* Ensure no underline */
+        text-decoration: none;
     }
 
 .project-title-overlay {
@@ -222,38 +222,38 @@ section {
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.6); /* Dark background for readability */
+    background: rgba(0, 0, 0, 0.6);
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 1rem;
     color: #ffffff;
     text-align: center;
-    pointer-events: none; /* So clicking still goes through */
+    pointer-events: none;
 }
 
 
 /* Contact Footer Styling */
 .contact-footer {
-    background: #000000; /* Pure black for footer */
+    background: #000000;
     color: #ffffff;
     text-align: center;
 }
 
     .contact-footer a {
-        color: #1E90FF; /* Bright blue links for contrast */
+        color: #1E90FF;
         text-decoration: none;
         margin: 0 10px;
         transition: color 0.3s ease;
     }
 
         .contact-footer a:hover {
-            color: #ffffff; /* Links turn white on hover */
+            color: #ffffff;
         }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .navbar .nav-links {
-        display: none; /* For simplicity; consider adding a hamburger menu */
+        display: none; /* TODO: hamburger menu? */
     }
 
     .video-overlay h1 {
@@ -291,12 +291,12 @@ section {
 
     .nav-links {
         position: absolute;
-        top: 60px; /* Adjust based on navbar height */
+        top: 60px;
         left: 0;
         width: 100%;
-        background: rgba(0, 0, 0, 0.95); /* Dark background for mobile menu */
+        background: rgba(0, 0, 0, 0.95);
         flex-direction: column;
-        align-items: center; /* British spelling for 'center' */
+        align-items: center;
         display: none;
     }
 
