@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
         video.load(); // Force reload the video
 
         video.addEventListener("loadedmetadata", () => {
-            const maxStart = Math.max(video.duration - 12, 0);
+            const maxStart = Math.max(video.duration - 20, 0);
             const randomStart = Math.random() * maxStart;
             video.currentTime = randomStart;
 
