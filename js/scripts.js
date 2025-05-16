@@ -19,25 +19,33 @@ document.addEventListener("DOMContentLoaded", () => {
     ];
 
     function playRandomSegment() {
-        // Pick a random video
         const randomSrc = videoSources[Math.floor(Math.random() * videoSources.length)];
         video.src = randomSrc;
 
-        // Wait for metadata to load so we can get duration
+        video.load(); // Force reload the video
+
         video.addEventListener("loadedmetadata", () => {
-            const maxStart = Math.max(video.duration - 10, 0); // avoid overflow
+            const maxStart = Math.max(video.duration - 10, 0);
             const randomStart = Math.random() * maxStart;
-
             video.currentTime = randomStart;
-            video.play();
 
-            setTimeout(() => {
-                playRandomSegment(); // Recursively play the next one
-            }, 10000); // 10 seconds
+            // Wait until the video has successfully sought before playing
+            video.addEventListener("seeked", () => {
+                const playPromise = video.play();
+                if (playPromise !== undefined) {
+                    playPromise.catch(err => console.warn("Autoplay blocked or failed:", err));
+                }
+
+                // Schedule next switch
+                setTimeout(() => {
+                    playRandomSegment();
+                }, 10000);
+            }, { once: true });
         }, { once: true });
     }
 
     playRandomSegment();
 });
+
 
 
