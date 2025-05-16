@@ -25,22 +25,28 @@ document.addEventListener("DOMContentLoaded", () => {
         video.load(); // Force reload the video
 
         video.addEventListener("loadedmetadata", () => {
-            const maxStart = Math.max(video.duration - 10, 0);
+            const maxStart = Math.max(video.duration - 12, 0);
             const randomStart = Math.random() * maxStart;
             video.currentTime = randomStart;
 
             // Wait until the video has successfully sought before playing
             video.addEventListener("seeked", () => {
-                const playPromise = video.play();
-                if (playPromise !== undefined) {
-                    playPromise.catch(err => console.warn("Autoplay blocked or failed:", err));
+                video.play();
+
+                // Hide the placeholder gracefully
+                const placeholder = document.getElementById("video-placeholder");
+                if (placeholder) {
+                    placeholder.style.transition = "opacity 0.5s ease";
+                    placeholder.style.opacity = "0";
+                    setTimeout(() => {
+                        placeholder.style.display = "none";
+                    }, 500);
                 }
 
-                // Schedule next switch
                 setTimeout(() => {
-                    playRandomSegment();
+                    playRandomSegment(); // Play next video segment after 10s
                 }, 10000);
-            }, { once: true });
+            });
         }, { once: true });
     }
 
