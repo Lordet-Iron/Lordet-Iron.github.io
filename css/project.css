@@ -55,6 +55,13 @@ body {
     background: url('../images/lastdance (1).png') no-repeat center center fixed;
     background-size: cover;
 }
+.nexusmanager-page {
+    background: url('../images/nexus/Background.jpeg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.paragraph-image{
+   width: 100%;
 }
 
 /* Container */

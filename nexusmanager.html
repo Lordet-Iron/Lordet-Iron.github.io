@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harrison Lockwood - Nexus Manager</title>
+    <link rel="stylesheet" href="css/project.css">
+</head>
+
+<body class="nexusmanager-page">
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Harrison Lockwood</a>
+            <!-- Mobile Menu Toggle Button -->
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About Me</a></li>
+                <li><a href="lastdance.html">Favourite Project</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="overlay"></div>
+
+    <div class="content">
+        <h1>Nexus Manager</h1>
+        <div class="project-info">
+            <p><strong>Project Type:</strong> Discord Bot Development</p>
+            <p><strong>Software Used:</strong> Visual Studio Code</p>
+            <p><strong>Languages Used:</strong> Python, SQL</p>
+            <p><strong>Primary Role:</strong> Solo Project</p>
+        </div>
+
+        <p class="project-description">
+            Nexus Manager is a scheduling assistant built for my growing Dungeons & Dragons community with increasingly complex player availability. It provides a streamlined way to create events, allow players to register interest, and automatically match availability so sessions can be organised quickly and reliably.
+        </p>
+
+        <div class="contributions">
+
+            <h2>Why use Discord as the Front End</h2>
+
+            <p class="project-description">
+                Since the entire community operates inside Discord, placing the interface elsewhere would ad unnecessary friction. Using the Discord Bot API lets players interact with the system naturally, without leaving the platform. It also enables automated actions, such as creating group chats and sending updated directly to our Discord server.
+            </p>
+            <img src="images/nexus/Event 3.png" alt="Description of image" class="paragraph-image">
+
+            <h2>Why Use SQL</h2>
+
+            <p class="project-description">
+                Initially, I considered JSON for storing event and user data, but SQL proved more suitable after prototyping. It allows efficient querying, such as filtering user availability by day, while ensuring data consistency and integrity.
+            </p>
+            <img src="images/nexus/Database.png" alt="Description of image" class="paragraph-image">
+
+            <h2>Why a Raspberry Pi for Hosting</h2>
+
+            <p class="project-description">
+                To start with, I hosted the bot on my personal machine, but uptime was limited and running a full Windows instance all day was costly. After evaluating cloud options, I chose a Raspberry Pi for its low running costs and 24/7 reliability.
+            </p>
+            <img src="images/nexus/SSH.png" alt="Description of image" class="paragraph-image">
+
+            <h2>Challenge Moments</h2>
+
+            <h3>User Friendly Design</h3>
+
+            <p class="project-description">
+                The first version of the availability system required users to run multiple commands whenever their availability changed. Feedback from friends led to a rework into a visual, button driven interface, which was far more intuitive. This experience reinforced the importance of user feedback in the development lifecycle.
+            </p>
+            <img src="images/nexus/Availability.png" alt="Description of image" class="paragraph-image">
+
+            <h3>Raspberry Pi Deployment</h3>
+
+            <p class="project-description">
+                This was my first experience with the Raspberry Pi. Setting up SSH and deploying the bot presented challenges, but it taught me valuable lessons about alternative operating systems and low-end deployment.
+            </p>
+
+
+            <h2>Key Features</h2>
+            <p class="project-description">
+                - Created a user friendly interface via a Discord Bot.<br>
+                - Created a SQL database to store user data.<br>
+                - Created commmands to see availability of users and book sessions.<br>
+                - Implemented error handling and data validation for reliability.<br>
+                - Created commands to matchmake users based on availability.<br>
+                - Created commands to publish events to users to sign up to.<br>
+                - Setup a Raspberry Pi to host the bot 24hrs/day.<br>
+                - Setup SSH access to the Raspberry Pi for remote updates and maintenance.<br>
+            </p>
+        </div>
+
+
+        <div class="buttons-container">
+            <!--INSERT LINKS-->
+            <a href="INSERT LINK TO SOURCE CODE" class="fancy-button" target="_blank">View Source Code</a>
+        </div>
+    </div>
+
+    <!-- Contact Me Footer -->
+    <footer id="contact" class="contact-footer">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>
+                I'd be more than happy to hear from you, just send a message here: misterh.lockwood@gmail.com.
+                I'll get back to you as soon as I can! Here's my other socials below.
+
+            </p>
+            <!-- Example contact links -->
+            <div class="contact-links">
+                <a href="mailto:misterh.lockwood@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/harrison-lockwood-026a961bb/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/Lordet-Iron" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/INSERT SCRIPT"></script>
+</body>
+</html>
